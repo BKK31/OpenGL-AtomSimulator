@@ -24,12 +24,33 @@ This is a mini project of computer graphics that demonstrates the simulation of 
    git clone https://github.com/bkk31/OpenGL-AtomSimulator.git
    ```
 
+#### Linux
+
 2. Build and run the program:
    ```
    cd OpenGL-AtomSimulator
-   make
+   g++ main.cpp -lGL -lGLU -lglut -o main
    ./main
    ```
+
+#### Windows
+
+For Windows, use code editors like VSCODE for compiling and running the program
+
+```
+g++ main.cpp -lglut -lglu32 -lopengl32 -o main
+./main.exe
+```
+
+#### MacOS
+
+For macOS, use XCODE IDE for compiling and running the program.
+You can use the following command in the terminal for running on macOS
+
+```
+clang++ main.cpp -framework OpenGL -framework GLUT -o main
+./main
+```
 
 ## Usage
 
